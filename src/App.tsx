@@ -37,7 +37,7 @@ function App() {
             <TonConnectButton />
             <Button>
               {network
-                ? network === CHAIN.MAINNET
+                ? network === CHAIN.TESTNET
                   ? "mainnet"
                   : "testnet"
                 : "N/A"}
