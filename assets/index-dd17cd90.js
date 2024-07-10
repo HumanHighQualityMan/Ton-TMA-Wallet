@@ -1198,4 +1198,4 @@ Values:
 `,xce=os.div`
   max-width: 900px;
   margin: 0 auto;
-`;function Mce(){const{network:e}=Au();return console.log(qo),Xt(wce,{children:Xt(xce,{children:_i(sg,{children:[_i(fu,{children:[Xt(_B,{}),Xt(ug,{children:e?e===qo.TESTNET?"mainnet":"testnet":"N/A"})]}),Xt(pce,{}),Xt(bce,{}),Xt(yce,{})]})})})}const _ce="https://ton.org/testnet-global.config.json",Sce=new DU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});y4.createRoot(document.getElementById("root")).render(Xt(LZ,{manifestUrl:_ce,children:Xt(iD,{client:Sce,children:Xt(Mce,{})})}));
+`;function Mce(){const{network:e}=Au();return console.log(qo),Xt(wce,{children:Xt(xce,{children:_i(sg,{children:[_i(fu,{children:[Xt(_B,{}),Xt(ug,{children:e?e===qo.TESTNET?"mainnet":"testnet":"N/A"})]}),Xt(pce,{}),Xt(bce,{}),Xt(yce,{})]})})})}const _ce="https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json",Sce=new DU({defaultOptions:{queries:{refetchOnWindowFocus:!1}}});y4.createRoot(document.getElementById("root")).render(Xt(LZ,{manifestUrl:_ce,children:Xt(iD,{client:Sce,children:Xt(Mce,{})})}));
