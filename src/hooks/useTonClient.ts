@@ -13,7 +13,7 @@ export function useTonClient() {
       if (!network) return;
       return new TonClient({
         endpoint: await getHttpEndpoint({
-          network: network === CHAIN.TESTNET ? "mainnet" : "testnet",
+          network: network === CHAIN.MAINNET ? "mainnet" : "testnet",
         }),
       });
     }, [network]),
