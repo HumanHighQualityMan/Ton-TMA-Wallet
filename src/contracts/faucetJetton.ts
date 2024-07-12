@@ -15,7 +15,6 @@ export default class FaucetJetton implements Contract {
     via: Sender,
     receivingAddress: Address
   ) {
-    console.log(arguments)
     const MINT = 21;
     const INTERNAL_TRANSFER = 0x178d4519;
     // @ts-ignore
@@ -48,7 +47,6 @@ export default class FaucetJetton implements Contract {
     const { stack } = await provider.get("get_wallet_address", [
       { type: "slice", cell: beginCell().storeAddress(forAddress).endCell() },
     ]);
-    console.log(stack)
 
     return stack.readAddress().toString();
   }

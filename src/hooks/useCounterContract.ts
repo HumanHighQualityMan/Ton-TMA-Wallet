@@ -26,9 +26,9 @@ export function useCounterContract() {
     const { data, isFetching } = useQuery(
         ["counter"],
         async () => {
-            console.log(counterContract)
             if (!counterContract) return null;
-            return (await counterContract!.getCounter()).toString();
+            let cou = await counterContract!.getCounter();
+            return cou.toString();
         },
         { refetchInterval: 3000 }
     );

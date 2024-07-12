@@ -10,7 +10,6 @@ export function useFaucetJettonContract() {
   const { wallet, sender } = useTonConnect();
   const { client } = useTonClient();
 
-  console.log(wallet,sender)
   const faucetJettonContract = useAsyncInitialize(async () => {
     if (!client || !wallet) return;
     const contract = new FaucetJetton(
